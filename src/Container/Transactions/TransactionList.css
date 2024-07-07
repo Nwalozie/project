@@ -1,0 +1,79 @@
+/* styles.css */
+.transaction-list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 300px;
+  }
+  
+  .listContainer {
+    display: flex;
+    background-color: transparent;
+    align-content: start;
+    flex-direction: row;
+    width: auto
+  }
+  
+  .imageIcon {
+    background-color: transparent;
+    margin: 1rem;
+  }
+  
+  .formContent {
+    background-color: transparent;
+    border-style: solid;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 1);
+    border-radius: 9px;
+    width: 750px; /* To be adjusted*/
+    border-left: 7px solid #f5b74f;
+    margin-bottom: 1rem;
+  }
+  
+  .formElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .formDate, .formCash, .formMessage {
+    padding: 20px;
+    flex: 1fr;
+  }
+  
+  .material-icons-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+    padding: 3px;
+  }
+  
+  .material-icons-outlined.formDate {
+    padding: 5px;
+  }
+  
+  .delete-button {
+    font-weight: bold;
+    flex: 1fr;
+    margin: 20px;
+    background: red;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 35px;
+    align-items: center;
+  }
+  
+  .delete-button img {
+    font-weight: bold;
+    background: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+  

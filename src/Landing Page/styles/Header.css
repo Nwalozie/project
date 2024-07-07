@@ -1,0 +1,27 @@
+/* Header.css */
+.app-bar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .nav-buttons button {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #000;
+  }
+  
+  .nav-buttons button:hover {
+    color: #2274A5;
+  }
+  

@@ -1,0 +1,36 @@
+/* Testimonial.css */
+.testimonial {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .block {
+    display: inline-block;
+    width: 15%;
+    height: 300px;
+    margin: 10px;
+    cursor: pointer;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .block:hover {
+    width: 30%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .p-container {
+    position: relative;
+    top: 30%;
+    margin-left: 5%;
+    width: 80%;
+  }
+  
+  .img-p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .block:hover .img-p {
+    opacity: 1;
+  }
+  

@@ -1,0 +1,30 @@
+/* ContactPanel.css */
+.contact-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .contact-form {
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-form h6 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .MuiTextField-root {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .MuiButton-root {
+    margin-top: 20px;
+  }
+  
