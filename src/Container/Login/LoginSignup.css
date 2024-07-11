@@ -4,6 +4,7 @@
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    background-color: white;
   }
   
   h2 {
@@ -49,9 +50,14 @@
     color: #007BFF;
     cursor: pointer;
     text-decoration: underline;
+    font-size: 1rem;
   }
   
   .toggle-link:hover {
     color: #0056b3;
+  }
+
+  .message{
+    font-size: 1rem;
   }
   

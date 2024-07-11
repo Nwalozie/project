@@ -9,10 +9,12 @@ import { useDispatch } from 'react-redux';
 import { logoutUser } from "../../Content/actions";
 import { useNavigate } from "react-router-dom";
 import { Sidebar } from "./SideBar";
+import { Overview } from "../Overview/Overview";
 
 export const Home = () => {
+  const defaultComponent = <Overview/>
   const [sidebarVisible, setSidebarVisible] = useState(true);
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState(defaultComponent);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

@@ -121,7 +121,7 @@ export const LoginSignup = () => {
         <button type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
       </form>
       {authError && <div className="error-message">{authError}</div>}
-      <p>
+      <p className='message'>
         {isLogin ? "Don't have an account? " : "Already have an account? "}
         <span className="toggle-link" onClick={() => setIsLogin(!isLogin)}>
           {isLogin ? 'Sign up here' : 'Login here'}
