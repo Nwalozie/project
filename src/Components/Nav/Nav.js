@@ -24,7 +24,7 @@ export const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="navbar-logo">
-        <p>kok</p>
+        <p>BudgetSmith</p>
         <img className="img" src="../../../Assets/favicon.ico" alt=""></img>
       </div>
       <div className="nav">

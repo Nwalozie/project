@@ -18,4 +18,5 @@ body{
   /* background-color: var(--color-bg); */
   margin: 0;
   border-style: none;
+  background-color: #000000;
 }

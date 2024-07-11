@@ -20,7 +20,7 @@ export const loginUser = (credentials) => async (dispatch) => {
 };
 
 export const signupUser = (credentials) => async (dispatch) => {
-  const user = { id: Date.now(), email: credentials.email, password: credentials.password, isProfileComplete: false };
+  const user = { id: Date.now(), email: credentials.email, password: credentials.password, isProfileComplete: true };
   try {
     const state = await loadStateFromIndexedDB(credentials.email);
     const newState = { ...state, transactions: { ...state.transactions, user, isAuthenticated: true, isProfileComplete: false } };

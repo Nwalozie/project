@@ -18,7 +18,7 @@ const CurrencyProvider = ({ children }) => {
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const API_KEY = '9bd9dc552f1b89d6cc3c2acb'
+        const API_KEY = '9bd9dc552f1'
         const response = await axios.get(`https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`);
         setRates(response.data.conversion_rates);
         setAvailableCurrencies(Object.keys(response.data.conversion_rates)); // Store the available currencies

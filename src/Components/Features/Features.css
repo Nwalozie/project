@@ -10,7 +10,7 @@ p {
 }
 
 .features-heading{
- /* background-color: black; */
+ background-color: black;
 }
 .features-heading p{
     background: var(--gradient-bar);
@@ -24,22 +24,20 @@ p {
     gap: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: static;
-    background-color:white;
+    background-color:black;
 }
 
 .features-container > div {
     width: 400px;
     margin: 1rem;
-    background-color:white;
+    background-color:rgba(63, 81, 181, 1);
     margin-left: 1.5rem;
-
+    border-image-slice: 1;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 4px solid #003f5c;
+    border-bottom: 4px solid rgb(206, 193, 193);
 }
 
-.features-container > div:hover {
+/* .features-container > div:hover {
     transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     background:rgb(215, 215, 215);
@@ -47,7 +45,7 @@ p {
 
 .features-container > div:hover .ft-image {
     transform: scale(1.1);
-}
+} */
 
 .ft-image {
     max-width: 100%;
@@ -66,7 +64,7 @@ p {
 }
 
 .ft-content p {
-    color: rgb(9, 9, 130);
+    color: whitesmoke;
     margin-top: 1rem;
     transition: color 0.3s ease;
     font-weight: 500;

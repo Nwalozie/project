@@ -1,175 +1,87 @@
 .testimonial-container{
     /* height: 100vh; */
-    background-color: #00202e;
+    background-color: #000000;
     margin: 0;
-    position: relative;
+    position: static;
 }
 
 .testimonial {
-    position: relative;
-    margin-top: 100px;
+    position: static;
     width: 100%;
     text-align: center;
     overflow-y: hidden;
-}
+}.testimonial h1 {
+    background: var(--gradient-bar);
+    background-clip:text;
+    color: transparent;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 28px;
+    margin: 30px;
 
-.block {
-    width: 600px;
-    height: 300px;
-    display: inline-block;
-    background-color: #bc5090;
-    cursor: pointer;
-    position: relative;
-    -webkit-transition: width 1s ease-in-out, background-color 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out, background-color 1s ease-in-out;
-    -ms-transition: width 1s ease-in-out, background-color 1s ease-in-out;
-    -o-transition: width 1s ease-in-out, background-color 1s ease-in-out;
-    transition: width 1s ease-in-out, background-color 1s ease-in-out;
-    text-align: center;
 }
-
-.block:hover {
-    background-color: #2274A5;
+.testimonial-slider {
     width: 50%;
-
-    -webkit-transition: width .9s ease-in-out, background-color .9s ease-in-out;
-    -moz-transition: width .9s ease-in-out, background-color .9s ease-in-out;
-    -ms-transition: width .9s ease-in-out, background-color .9s ease-in-out;
-    -o-transition: width .9s ease-in-out, background-color .9s ease-in-out;
-    transition: width .9s ease-in-out, background-color .9s ease-in-out;
-}
-
-.block:hover .img-p {
-    opacity: 1;
-    -webkit-transition: opacity .5s .51s ease-in-out;
-    -moz-transition: opacity .5s .51s ease-in-out;
-    -ms-transition: opacity .5s .51s ease-in-out;
-    -o-transition: opacity .5s .51s ease-in-out;
-    transition: opacity .5s .51s ease-in-out;
-}
-
-.block:hover .layer {
-    opacity: .5;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -ms-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-}
-
-.img-p {
-    position: absolute;
-    font-size: 16px;
-    opacity: 0;
-    color: #FFF;
-    text-align: left;
-    line-height: 1.6em;
-}
-
-.p-container {
-    width: 80%;
-    position: relative;
-    top: 30%;
-    margin-left: 5%;
-}
-
-h1 {
-    color: #fff;
-}
-
-.image {
-    background-image: url(http://i67.tinypic.com/34ywe8m.jpg);
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.image.fixed {
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-}
-
-.layer {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #000;
+    margin: 0 auto;
+    position: static;
+  }
+  
+  .testimonial-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    position: static;
+  }
+  
+  .testimonial-image {
     width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-@media (max-width: 768px) {
-    .testimonial {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .block {
-        width: 100%;
-        height: 200px;
-        -webkit-transition: height .5s ease-in-out;
-        -moz-transition: height .5s ease-in-out;
-        -ms-transition: height .5s ease-in-out;
-        -o-transition: height .5s ease-in-out;
-        transition: height .5s ease-in-out;
-    }
-
-    .block:hover {
-        width: 100%;
-        height: 400px;
-        -webkit-transition: height .5s ease-in-out;
-        -moz-transition: height .5s ease-in-out;
-        -ms-transition: height .5s ease-in-out;
-        -o-transition: height .5s ease-in-out;
-        transition: height .5s ease-in-out;
-    }
-}
-
-@media (min-width: 768px) {
-    .block {
-        width: 15%;
-    }
-}
-
-@media (min-width: 992px) {
-    .block {
-        width: 10%;
-    }
-}
-
-.ua {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    color: #fff;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .testimonial-content {
+    margin-top: 20px;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .testimonial-text {
     font-size: 2em;
-}
-
-.fa {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.ua:hover .fa {
-    color: #17BEBB;
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .testimonial-author {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #FF8A71;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
