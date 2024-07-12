@@ -8,7 +8,7 @@ import { BudgetAlerts } from "../Currency/BudgetAlerts";
 import { useDispatch } from 'react-redux';
 import { logoutUser } from "../../Content/actions";
 import { useNavigate } from "react-router-dom";
-import { Sidebar } from "./SideBar";
+import { Sidebar } from "../Sidebar/SideBar";
 import { Overview } from "../Overview/Overview";
 
 export const Home = () => {
